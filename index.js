@@ -12,4 +12,13 @@ mySubmit.onclick = () => {
   } else {
     myCheckBox.textContent = `You are not subscribed`;
   }
+  if (myVisaBtn.checked) {
+    paymentResult.textContent = `You are paying with visa`;
+  } else if (myMasterBtn.checked) {
+    paymentResult.textContent = `You are paying with Master`;
+  } else if (myPayPalBtn.checked) {
+    paymentResult.textContent = `You are paying with PayPal`;
+  } else {
+    paymentResult.textContent = `Please select a payment method!`;
+  }
 };

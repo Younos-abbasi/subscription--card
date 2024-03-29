@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0px 10px #555;
+}
+.card__btn {
+  margin: 15px 0;
+}
+#mySubmit {
+  margin-left: 20px;
+  width: 80px;
+  height: 25px;
+  font-size: 1em;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+#mySubmit:hover {
+  color: #fff;
+  background-color: #555;
+}
+.card__result {
+  margin-top: 15px;
+  margin-right: 90px;
+}
+.card__result p:nth-of-type(2) {
+  margin-top: 10px;
+}

@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Subscription Card</title>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <h1>Subscribe Plan</h1>
-        <input type="checkbox" id="myCheckBox" />
-        <label for="checkbox" id="myLabel">Subscribe</label>
-        <h2>Select Payment Method</h2>
+    <div class="card">
+      <h1>Subscribe Plan</h1>
+      <input type="checkbox" id="myCheckBox" />
+      <label for="checkbox" id="myLabel">Subscribe</label>
+      <h2>Select Payment Method</h2>
+      <div class="card__btn">
         <input type="radio" id="myVisaBtn" name="button" />
         <label for="myVisaBtn">Visa</label>
         <input type="radio" id="myMasterBtn" name="button" />
@@ -19,9 +20,12 @@
         <input type="radio" id="myPayPalBtn" name="button" />
         <label for="myPayPalBtn">PayPal</label>
         <button id="mySubmit" type="submit">Submit</button>
+      </div>
+      <div class="card__result">
         <p id="subResult"></p>
         <p id="paymentResult"></p>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
